@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sid's Calculator</title>
+    <link rel="stylesheet" href="final_style.css">
+</head>
+<body class="theme-black">
+    <main>
+        <div class="calc-container">
+            <h1 class="title">Basic Calculator</h1>
+            
+            <!-- themes -->
+            <div class="themes">
+                <div class="theme btn-blue" data-theme="blue"></div>
+                <div class="theme btn-black" data-theme="black"></div>
+                <div class="theme btn-green" data-theme="green"></div>
+                <div class="theme btn-white" data-theme="white"></div>
+            </div>
+
+            <input type="text" class="display" id="display" readonly>
+
+            <!-- buttons -->
+            <div class="buttons">
+                <div class="btn clear" data-action="clear">AC</div>
+                <div class="btn clear" data-action="delete">⌫</div>
+                <div class="btn operator" data-action="%">%</div>
+                <div class="btn operator" data-action="/">/</div>
+                
+                <div class="btn number" data-value="7">7</div>
+                <div class="btn number" data-value="8">8</div>
+                <div class="btn number" data-value="9">9</div>
+                <div class="btn operator" data-value="*">*</div>
+
+                <div class="btn number" data-value="4">4</div>
+                <div class="btn number" data-value="5">5</div>
+                <div class="btn number" data-value="6">6</div>
+                <div class="btn operator" data-action="-">-</div>
+                
+                <div class="btn number" data-value="1">1</div>
+                <div class="btn number" data-value="2">2</div>
+                <div class="btn number" data-value="3">3</div>
+                <div class="btn operator" data-action="+">+</div>
+                
+                <div class="btn number" data-value="0">0</div>
+                <div class="btn number" data-value=".">.</div>
+                <div class="btn equals" data-action="equals">=</div>
+            </div>
+        </div>
+    </main>
+    <script src="final_app.js"></script>
+</body>
+</html>
